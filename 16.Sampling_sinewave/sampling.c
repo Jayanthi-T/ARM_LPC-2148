@@ -12,7 +12,7 @@ unsigned long int i=0;
 //Function to initialize Serial Port
 void serial_Init(void) 
 {
-  unsigned int baudrate  ;
+  unsigned int baudrate ;
   PINSEL0|=0X00000005;
   VPBDIV=0X01;
   baudrate = (f/(9600*16)); // Baudrate setting (9600 bps)
